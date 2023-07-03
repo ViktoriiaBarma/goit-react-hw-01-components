@@ -6,15 +6,15 @@ export const ProfileCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
+
   margin: 0 auto;
   margin-bottom: 5px;
   padding: 4px;
 
   max-width: 100%;
   width: 360px;
-  
-  border-radius: 30px;
+
+  border-radius: 20px;
   background-color: #81c4ab;
 `;
 
@@ -47,23 +47,24 @@ export const Avatar = styled.img`
 
 export const Info = styled.p`
   color: blue;
- 
 `;
 
 export const Name = styled(Info)`
   color: #19039e;
   font-size: 36px;
   font-weight: 500;
+  margin: 0 auto;
 `;
 
 export const Tag = styled(Info)`
-  color:#3d44d0;
+  color: #3d44d0;
   font-size: 16px;
 `;
 
 export const Location = styled(Info)`
   color: #257bab;
-  font-size:20px;
+  font-size: 20px;
+  margin: 10px auto;
 `;
 
 export const StatsList = styled.ul`
@@ -73,21 +74,21 @@ export const StatsList = styled.ul`
   align-items: center;
   padding: 4px;
   width: 100%;
+  margin: 10px auto;
 `;
 
 export const StatsItem = styled.li`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 
   &:hover {
     background: #ecf0f3;
     box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+    border-radius: 15px;
   }
-
- 
 `;
 
 export const StatsInfo = styled.span`
@@ -97,7 +98,7 @@ export const StatsInfo = styled.span`
 `;
 
 export const Label = styled(StatsInfo)`
-font-size: 18px;
+  font-size: 18px;
   font-weight: 400;
 `;
 
