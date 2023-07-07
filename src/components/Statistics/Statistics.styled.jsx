@@ -18,10 +18,10 @@ export const Title = styled.h2`
   padding: 4px;
 
   border-bottom: 1px solid #d3d5e3;
-  color: #3d44d0;
+  color: #19039e;
   text-shadow: 1px 1px 1px #fff;
   font-weight: 700;
-  font-size:  12px;
+  font-size:  16px;
 
   text-transform: uppercase;
   text-align: center;

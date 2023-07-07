@@ -4,17 +4,21 @@ import { Profile } from './Profile/Profile';
 import data from './Statistics/data.json';
 import { Statistics } from './Statistics/Statistics';
 
+import friends from './Friends/friends.json';
+import { FriendList } from './Friends/FriendList/FriendList';
+
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
         display: 'flex',
-        flexDirection: 'colunm',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
+        marginTop: '120px'
       }}
     >
       <Profile
@@ -24,7 +28,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-     <Statistics title="Upload stats" stats={data} /> 
+      <Statistics title="Upload stats" stats={data} /> 
+      <FriendList friends={friends} />
     </div>
   );
 };
