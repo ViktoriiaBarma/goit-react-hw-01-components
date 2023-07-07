@@ -7,18 +7,23 @@ import { Statistics } from './Statistics/Statistics';
 import friends from './Friends/friends.json';
 import { FriendList } from './Friends/FriendList/FriendList';
 
+import transactions from './TransactionHistory/transactions.json';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+
+
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        width: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
-        marginTop: '120px'
+        backgroundColor: 'rgb(221, 223, 248)',
+        padding: '8px 32px'
       }}
     >
       <Profile
@@ -30,6 +35,8 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} /> 
       <FriendList friends={friends} />
+            <TransactionHistory items={transactions} />
+
     </div>
   );
 };

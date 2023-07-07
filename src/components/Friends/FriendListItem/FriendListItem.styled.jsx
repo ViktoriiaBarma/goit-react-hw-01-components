@@ -47,7 +47,7 @@ export const Image = styled.img`
 
 export const Name = styled.p`
   margin-left: 10px;
-  color: #19039e;
+  color: #3d44d0;
   text-shadow: 1px 1px 1px #fff;
   font-size: 16px;
   font-weight: 700;
